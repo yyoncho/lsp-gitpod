@@ -22,8 +22,8 @@
 (my/wait-for-installation 'ts-ls)
 (my/wait-for-installation 'json-ls)
 (my/wait-for-installation 'xmlls)
-(my/wait-for-installation 'html-ls)
 (my/wait-for-installation 'rust-analyzer)
+(my/wait-for-installation 'html-ls)
 (my/wait-for-installation 'css-ls)
 (my/wait-for-installation 'clojure-lsp)
 

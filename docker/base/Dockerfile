@@ -14,10 +14,10 @@ RUN NATIVE_FULL_AOT=1 make -j8
 
 RUN sudo apt-get update && sudo apt-get install -y ripgrep fasd  libtool-bin
 
-WORKDIR /home/gitpod/
-
-RUN mkdir -p /home/gitpod/.local/share/fonts/
 COPY fonts/* /home/gitpod/.local/share/fonts/
+RUN mkdir -p /home/gitpod/.local/share/fonts/
+
+WORKDIR /home/gitpod/
 
 COPY configs/install-packages.el /tmp/install-packages.el
 RUN LSP_USE_PLISTS=true ~/emacs/src/emacs --batch -l /tmp/install-packages.el

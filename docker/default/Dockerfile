@@ -1,4 +1,4 @@
-FROM yyoncho/gitpod-base:1.1.0
+FROM yyoncho/gitpod-base:1.1.2
 
 RUN mv .emacs.d vanilla
 

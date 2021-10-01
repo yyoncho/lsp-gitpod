@@ -2,7 +2,11 @@
 (setq native-comp-deferred-compilation t)
 
 (package-initialize)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+
+(setq package-archives '(("melpa" . "http://www.mirrorservice.org/sites/melpa.org/packages/")
+                         ("gnu" . "http://elpa.gnu.org/packages/")
+                         ("nongnu" . "http://elpa.nongnu.org/nongnu/")))
+
 (package-refresh-contents)
 
 (package-install 'quelpa)
